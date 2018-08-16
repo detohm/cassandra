@@ -45,7 +45,7 @@ if [ "$1" = 'cassandra' ]; then
 	fi
 	: ${CASSANDRA_SEEDS:="$CASSANDRA_BROADCAST_ADDRESS"}
 
-	if [ -n "$CASSANDRA_CONFIG_YAML_PATH"]; then
+	if [ -n "$CASSANDRA_CONFIG_YAML_PATH" ]; then
 		cp $CASSANDRA_CONFIG_YAML_PATH $CASSANDRA_CONFIG/cassandra.yaml
 	fi
 	
